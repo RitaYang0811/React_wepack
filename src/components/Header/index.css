@@ -1,0 +1,25 @@
+/* Header */
+.c-todo__title {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.c-todo__action {
+  display: flex;
+  gap: 8px;
+}
+.c-todo__input {
+  flex-grow: 1;
+  padding: 4px 8px;
+  font-size: 22px;
+  line-height: 1.5;
+}
+.c-todo__btn {
+  padding: 8px 12px;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  background-color: #6daf7d;
+  cursor: pointer;
+}

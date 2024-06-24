@@ -1,0 +1,7 @@
+/* list */
+.c-list {
+  flex: 1 1 0;
+  list-style: none;
+  padding-left: 0px;
+  overflow-y: auto;
+}
