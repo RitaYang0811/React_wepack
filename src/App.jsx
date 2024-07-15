@@ -12,11 +12,20 @@ export default class App extends Component {
       { id: '003', name: '寫程式', done: false },
     ],
   };
+  //addTodo用於添加一個todo，接收的是todo物件
+  addTodo = (todoObj) => {
+    //獲取原todos
+    const { todos } = this.state;
+    //追加一個todo
+    const newTodos = [todoObj, ...todos];
+    //更新狀態
+    this.setState({ todos: newTodos });
+  };
   render() {
     const { todos } = this.state;
     return (
       <div className="c-todo">
-        <Header />
+        <Header addTodo={this.addTodo} />
         <List todos={todos} />
         <Footer />
       </div>
